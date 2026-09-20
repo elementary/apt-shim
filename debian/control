@@ -1,0 +1,16 @@
+Source: io.elementary.apt-shim
+Section: admin
+Priority: optional
+Maintainer: elementary <builds@elementary.io>
+Build-Depends: debhelper-compat (= 13),
+               libglib2.0-dev,
+               meson,
+               valac
+Standards-Version: 4.7.3
+Homepage: https://github.com/elementary/apt-shim
+
+Package: io.elementary.apt-shim
+Architecture: any
+Depends: apt, ${shlibs:Depends}, ${misc:Depends}
+Description: Restrict execution of apt for atomic system
+ This package provides a shim that restricts execution of apt for atomic system

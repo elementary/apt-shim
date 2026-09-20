@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+update-alternatives --remove apt /usr/bin/io.elementary.apt-shim || true
+update-alternatives --remove apt /usr/bin/apt || true
+
+#DEBHELPER#
+
+exit 0
