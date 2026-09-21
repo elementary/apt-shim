@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.apt-shim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-21 00:15+0900\n"
+"POT-Creation-Date: 2026-09-21 11:14+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,32 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Application.vala:8
-msgid "APT can't be used to manage packages on this device"
+#: src/Application.vala:13
+msgid ""
+"APT can't be used to manage packages on this device because the system files "
+"are immutable"
 msgstr ""
 
-#: src/Application.vala:9
+#: src/Application.vala:15
 msgid ""
-"• Applications can be managed with Flatpak. See `flatpak --help` or use the "
-"AppCenter app"
+"• Applications can be managed with Flatpak. See `flatpak --help` or use "
+"AppCenter"
 msgstr ""
 
-#: src/Application.vala:10
+#: src/Application.vala:16
 msgid ""
-"• System updates can be managed with Sysupdate. See `updatectl --help` or "
-"open the System Settings app and select System"
+"• System updates can be managed with systemd-sysupdate. See `updatectl --"
+"help` or open System Settings and visit System"
+msgstr ""
+
+#: src/Application.vala:18
+msgid ""
+"You can still use APT by specifying the absolute path like `/usr/bin/apt` or "
+"`/usr/bin/apt-get` but sub-commands that neeed write access to the system "
+"partition like `install` is not supported"
+msgstr ""
+
+#: src/Application.vala:20
+#, c-format
+msgid "For more information about how to install applications, visit %s"
 msgstr ""
