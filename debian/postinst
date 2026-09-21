@@ -2,11 +2,11 @@
 
 set -e
 
-update-alternatives --install /usr/local/bin/apt apt /usr/bin/apt 200 || true
-update-alternatives --install /usr/local/bin/apt apt /usr/bin/io.elementary.apt-shim 900 || true
+update-alternatives --install /usr/sbin/apt apt /usr/bin/apt 200 || true
+update-alternatives --install /usr/sbin/apt apt /usr/bin/io.elementary.apt-shim 900 || true
 
-update-alternatives --install /usr/local/bin/apt-get apt-get /usr/bin/apt-get 200 || true
-update-alternatives --install /usr/local/bin/apt-get apt-get /usr/bin/io.elementary.apt-shim 900 || true
+update-alternatives --install /usr/sbin/apt-get apt-get /usr/bin/apt-get 200 || true
+update-alternatives --install /usr/sbin/apt-get apt-get /usr/bin/io.elementary.apt-shim 900 || true
 
 #DEBHELPER#
 
