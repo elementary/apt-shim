@@ -10,16 +10,14 @@ public static int main (string[] args) {
     Intl.textdomain (Config.GETTEXT_PACKAGE);
 
     stdout.printf ("\n" +
-                   _("APT can't be used to manage packages on this device") + "\n" +
-                   _("• Applications can be managed with Flatpak. See `flatpak --help` or use the AppCenter app") + "\n" +
-                   _("• System updates can be managed with Sysupdate. See `updatectl --help` or open the System Settings app and select System") + "\n" +
+                   _("APT can't be used to manage packages on this device because the system files are immutable") + "\n" +
                    "\n" +
-                   /*
-                    * No need to make the URL translatable since accessing this redirects to localized page
-                    * depending on the browser language. Also gettext warns if this is translatable when updating
-                    * translation files.
-                    */
-                   "https://elementary.io/docs/learning-the-basics#installing-apps" + "\n");
+                   _("• Applications can be managed with Flatpak. See `flatpak --help` or use AppCenter") + "\n" +
+                   _("• System updates can be managed with systemd-sysupdate. See `updatectl --help` or open System Settings and visit System") + "\n" +
+                   "\n" +
+                   _("You can still use APT by specifying the absolute path like `/usr/bin/apt` or `/usr/bin/apt-get` but sub-commands that neeed write access to the system partition like `install` is not supported") + "\n" +
+                   "\n" +
+                   _("For more information about how to install applications, visit %s").printf ("https://elementary.io/docs/learning-the-basics#installing-apps") + "\n");
 
     return 1;
 }
