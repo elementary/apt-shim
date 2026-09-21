@@ -11,6 +11,7 @@ Homepage: https://github.com/elementary/apt-shim
 
 Package: io.elementary.apt-shim
 Architecture: any
-Depends: flatpak, systemd-container, ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: flatpak, systemd-container
 Description: Restrict execution of apt for atomic system
  This package provides a shim that restricts execution of apt for atomic system
