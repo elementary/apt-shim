@@ -15,7 +15,7 @@ public static int main (string[] args) {
                    _("• Applications can be managed with Flatpak. See `flatpak --help` or use AppCenter") + "\n" +
                    _("• System updates can be managed with systemd-sysupdate. See `updatectl --help` or open System Settings and visit System") + "\n" +
                    "\n" +
-                   _("You can still use APT by specifying the absolute path like `/usr/bin/apt` or `/usr/bin/apt-get` but sub-commands that neeed write access to the system files like `install` is not supported") + "\n" +
+                   _("You can still use APT by specifying the absolute path like `/usr/bin/apt` or `/usr/bin/apt-get` but sub-commands that need write access to the /usr system files like `install` are not supported") + "\n" +
                    "\n" +
                    _("For more information about how to install applications, visit %s").printf ("https://elementary.io/docs/learning-the-basics#installing-apps") + "\n");
 
