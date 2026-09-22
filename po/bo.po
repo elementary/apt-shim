@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.apt-shim package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.elementary.apt-shim\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-22 21:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: bo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/Application.vala:13
+msgid ""
+"APT can't be used to manage packages on this device because the system files "
+"are immutable"
+msgstr ""
+
+#: src/Application.vala:15
+msgid ""
+"• Applications can be managed with Flatpak. See `flatpak --help` or use "
+"AppCenter"
+msgstr ""
+
+#: src/Application.vala:16
+msgid ""
+"• System updates can be managed with systemd-sysupdate. See `updatectl --"
+"help` or open System Settings and visit System"
+msgstr ""
+
+#: src/Application.vala:18
+msgid ""
+"You can still use APT by specifying the absolute path like `/usr/bin/apt` or "
+"`/usr/bin/apt-get` but sub-commands that need write access to the /usr "
+"system files like `install` are not supported"
+msgstr ""
+
+#: src/Application.vala:20
+#, c-format
+msgid "For more information about how to install applications, visit %s"
+msgstr ""
