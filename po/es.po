@@ -8,32 +8,41 @@ msgstr ""
 "Project-Id-Version: io.elementary.apt-shim\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-22 21:40+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-20 21:04+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <italo@gp-mail.com>\n"
+"Language-Team: Spanish <https://l10n.elementaryos.org/projects/desktop/apt-"
+"shim/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: src/Application.vala:13
 msgid ""
 "APT can't be used to manage packages on this device because the system files "
 "are immutable"
 msgstr ""
+"No se puede usar APT para administrar paquetes porque los archivos del "
+"sistema son inmutables"
 
 #: src/Application.vala:15
 msgid ""
 "• Applications can be managed with Flatpak. See `flatpak --help` or use "
 "AppCenter"
 msgstr ""
+"• Se pueden administrar aplicaciones con Flatpak. Puede escribir «flatpak --"
+"help» en una terminal o usar el Centro de Aplicaciones"
 
 #: src/Application.vala:16
 msgid ""
 "• System updates can be managed with systemd-sysupdate. See `updatectl --"
 "help` or open System Settings and visit System"
 msgstr ""
+"• Las actualizaciones del sistema de pueden administrar con «systemd-"
+"sysupdate». Escriba «updatectl --help» en una terminal, o abra «"
+"Configuración del Sistema > Sistema»"
 
 #: src/Application.vala:18
 msgid ""
@@ -41,8 +50,12 @@ msgid ""
 "`/usr/bin/apt-get` but sub-commands that need write access to the /usr "
 "system files like `install` are not supported"
 msgstr ""
+"Todavía se puede utilizar APT si se especifica la ruta absoluta como «/usr/"
+"bin/apt» o «/usr/bin/apt-get», pero no se permiten sub-comandos que "
+"necesiten acceso de escritura a los archivos del sistema («/usr»), tales "
+"como «install»"
 
 #: src/Application.vala:20
 #, c-format
 msgid "For more information about how to install applications, visit %s"
-msgstr ""
+msgstr "Para más información sobre cómo instalar aplicaciones, visite %s"
